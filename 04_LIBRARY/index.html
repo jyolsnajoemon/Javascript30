@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">Digital Library</div>
+
+    <div class="newBook">
+        <h1 class="addBook">Add a Book</h1>
+    </div>
+
+    <div class="modal" id="myModal">
+        <div class="form">
+            <form method="post" id="form" onsubmit="addBookToLibrary(event)">
+                <div>
+                    <input type="text" name="title" class="labels" required placeholder="Title">
+                </div>
+                <div>
+                    <input type="text" name="author" class="labels" required placeholder="Author">
+                </div>
+                <div>
+                    <input type="number" name="noOfPages" class="labels" placeholder="Number of Pages">
+                </div>
+                <div class="readStatus">
+                    <label for="checkbox" class="statusLabel">Have you read it?</label>
+                    <input type="checkbox" name="status" id="statusCheckbox" class="status">
+                </div>
+
+                <button class="submit" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
